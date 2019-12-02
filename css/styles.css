@@ -1,0 +1,339 @@
+body {
+  font-family: verdana, Geneva, sans-serif;
+  width: 100%;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 14px;
+}
+
+b {
+  margin-right: 4px;
+}
+
+.bigcircle {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.card {
+  display: block;
+  width: 293px;
+  height: 293px;
+  margin: 7px;
+}
+
+img {
+  width: 293px;
+  height: 293px;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+}
+
+
+/*/ OVERLAY /*/
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#alloverlay {
+  width: 935px;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#currentimg {
+  width: 600px;
+  height: 600px;
+}
+
+#comments {
+  width: 335px;
+  height: 600px;
+  float: left;
+  background: white;
+}
+
+#fakeuserdesktop {
+  height: 50px;
+  width: 100%;
+  background: white;
+  margin: 0;
+  float:left;
+  margin-bottom: 20px;
+}
+
+#fakeusermobile {
+  height: 75px;
+  width: 100%;
+  background: white;
+  margin: 0;
+  float:left;
+  margin-bottom: 10px;
+}
+
+#box {
+  background: white;
+}
+
+#imgside {
+  width: 600px;
+  height: 600px;
+  float: left;
+}
+
+
+/*/ USER COMMENTS /*/
+.smallcircle {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin: 20px;
+}
+
+.secondprofile {
+  width: 32px;
+  height: 32px;
+}
+
+.secondpic {
+  float: left;
+}
+
+.username {
+  float: left;
+  width: 250px;
+}
+
+#secondcomment {
+  margin-bottom: 430px;
+}
+
+/*/ ICONS /*/
+#iconseries {
+  width: 100%;
+  height: 200px;
+}
+
+#icon {
+  width: 50px;
+  height: 40px;
+  float: left;
+}
+
+
+#icons {
+  padding-left: 10px;
+  width: 270px;
+  height: 40px;
+  float: left;
+}
+
+#icons i {
+  margin-right: 10px;
+}
+
+#likes {
+  margin-left: 10px;
+}
+
+/*/ MOBILE /*/
+@media only screen and (max-width: 400px) {
+  header {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 310px;
+  }
+
+  .profileinfo {
+    width: 600px;
+    text-align: center;
+  }
+
+  .container {
+    width: 310px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+  .profilepic {
+    width: 300px;
+  }
+
+  .bio {
+    display: none;
+  }
+
+   #alloverlay {
+     width: 100%;
+     height: 450px;
+     background-color: white;
+   }
+
+   .secondpic {
+     height: 60px;
+   }
+
+   #fakeusermobile {
+     height: 60px;
+   }
+
+   #imgside {
+     height: 250px;
+     width: 100%;
+     text-align: center;
+   }
+
+   #fakeuserdesktop {
+     display: none;
+   }
+
+   #firstcomment {
+     display: none;
+   }
+   #currentimg {
+     width: 250px;
+     height: 250px;
+   }
+
+   #secondcomment {
+     display: none;
+   }
+
+   #comments {
+     height: inherit;
+   }
+
+   #pictext {
+     padding-left: 35px;
+   }
+
+   #iconseries {
+     height: inherit;
+   }
+
+   hr {
+     display: none;
+   }
+
+   .username {
+     height: 60px;
+     width: 200px;
+   }
+
+   #icons {
+     padding-left: 60px;
+     width: 200px;
+   }
+
+   #likes {
+     padding-left: 50px;
+   }
+}
+
+/*/ I PAD /*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  header {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  .profileinfo {
+    width: 225px;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .container {
+    width: 615px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+  .profilepic {
+    width: 150px;
+  }
+
+   #fakeusermobile {
+     display: none;
+   }
+}
+
+/*/ DESKTOP /*/
+@media only screen and (min-width: 961px) {
+  header {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .profileinfo {
+    width: 600px;
+  }
+
+  .container {
+    width: 935px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+  .profilepic {
+    width: 300px;
+  }
+
+   #fakeusermobile {
+     display: none;
+   }
+}
