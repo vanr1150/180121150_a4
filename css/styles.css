@@ -1,7 +1,9 @@
+@media only screen and (max-width: 600px) {
 body {
   font-family: verdana, Geneva, sans-serif;
   width: 100%;
   margin: 0px;
+}
 }
 
 h1 {
